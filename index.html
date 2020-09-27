@@ -8,21 +8,25 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__menu">
-                <a class="header__logo logo">
-                    <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy Logo">
-                </a>
-                <button class="button nav__button"></button>
+            <div class="container header__container">
+                <div class="header__menu">
+                    <a class="header__logo">
+                        <img class="header__image" src="img/logo-mobile.svg"  alt="Cat Energy Logo">
+                    </a>
+                    <button class="header__burger">
+                        <img src="img/icon-mobile-menu.svg" alt="Burger">
+                    </button>
+                </div>
+                <nav class="header__nav nav">
+                    <a href="index.html" class="nav__item">Главная</a>
+                    <a href="catalog.html" class="nav__item">Каталог продукции</a>
+                    <a href="form.html" class="nav__item">Подбор программы</a>
+                </nav>
             </div>
-            <nav class="header-nav nav">
-                <a href="index.html" class="nav__item">Главная</a>
-                <a href="catalog.html" class="nav__item">Каталог продукции</a>
-                <a href="form.html" class="nav__item">Подбор программы</a>
-            </nav>
         </header>
         <main>
             <section class="hero">
-                <div class="hero__wrapper">
+                <div class="container hero__container">
                     <h1 class="hero__title">Функциональное питание для котов</h1>
                     <p class="hero__tagline">Занялся собой? Займись котом!</p>
                     <img class="hero__image" src="img/index-can-mobile@1x.png" alt="Куриный CatEnergy">
@@ -30,25 +34,31 @@
                 </div>
             </section>
             <section class="varieties">
-                <h2 class="covert">Категории</h2>
-                <ul class="varieties__items">
-                    <li class="varieties__item">
-                        <div>
-                            <img class="varieties__image" src="img/icon-cat-slim.svg" width="35" height="49" alt="Cat Slim">
-                            <h3 class="varieties__title">Похудение</h3>
-                        </div>
-                        <p class="varieties__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                        <a class="varieties__link" href="slim.html">Каталог Slim</a>
-                    </li>
-                    <li class="varieties__item">
-                        <div>
-                            <img class="varieties__image" src="img/icon-cat-pro.svg" width="67" height="28" alt="Cat Slim">
-                            <h3 class="varieties__title">Набор массы</h3>
-                        </div>
-                        <p class="varieties__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                        <a class="varieties__link" href="fat.html">Каталог Pro</a>
-                    </li>
-                </ul>
+                <div class="container varieties__container">
+                    <h2 class="cover">Категории</h2>
+                    <ul class="varieties__items">
+                        <li class="varieties__item">
+                            <div class="varieties__content">
+                                <div class="varieties__wrapper">
+                                    <img class="varieties__image" src="img/icon-cat-slim.svg" alt="Cat Slim">
+                                </div>
+                                <h3 class="varieties__title">Похудение</h3>
+                            </div>
+                            <p class="varieties__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                            <a class="varieties__link" href="slim.html">Каталог Slim</a>
+                        </li>
+                        <li class="varieties__item">
+                            <div class="varieties__content">
+                                <div class="varieties__wrapper">
+                                    <img class="varieties__image" src="img/icon-cat-pro.svg" alt="Cat Slim">
+                                </div>
+                                <h3 class="varieties__title">Набор массы</h3>
+                            </div>
+                            <p class="varieties__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                            <a class="varieties__link" href="fat.html">Каталог Pro</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="explanations">
                 <h2 class="explanations__title">Как это работает</h2>
@@ -114,7 +124,7 @@
                     <h3 class="contacts__invite">Приглашаем  к сотрудничеству  дилеров!</h3>
                     <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
-                <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aad1d56b0dcec1cef96cd07c67eea352897009907df4a1b3672ea73765216b123&amp;width=500&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aad1d56b0dcec1cef96cd07c67eea352897009907df4a1b3672ea73765216b123&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
             </section>
         </main>
         <footer class="footer">
