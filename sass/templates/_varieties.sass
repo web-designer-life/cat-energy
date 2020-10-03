@@ -1,9 +1,14 @@
 .varieties
+    &__container
+        max-width: 1920px
+        padding: 11px 20px 16px 20px
+        margin: auto
     &__items
         display: flex
         flex-wrap: wrap
         justify-content: center
         margin-bottom: 0
+        padding-left: 0
     &__item
         width: 280px
         height: 266px
@@ -11,11 +16,13 @@
         margin-bottom: 20px
         padding: 20px 0
         padding-left: 20px
+        list-style-type: none
     &__content
         display: flex
         align-items: center
         margin-bottom: 25px
     &__wrapper
+        position: relative
         display: flex
         align-items: center
         justify-content: center
@@ -24,9 +31,21 @@
         border-radius: 50%
         background-color: $green
         margin-right: 20px
-    &__image
-        width: 67px
-        height: 49px
+        &--slim
+            &::before
+                background-image: url(../../img/icon-cat-slim.svg)
+                width: 35px
+                height: 49px
+        &--pro
+            &::before
+                background-image: url(../../img/icon-cat-pro.svg)
+                width: 67px
+                height: 26px
+        &::before
+            position: absolute
+            content: ''
+            background-repeat: no-repeat
+            background-position: center
     &__title
         color: #111111
         font-size: 24px
@@ -43,7 +62,8 @@
         line-height: 18px
         margin-bottom: 45px
     &__link
-        display: flex
+        display: inline-block
+        position: relative
         text-decoration: none
         color: lighten($black, 6.5%)
         font-size: 16px
@@ -51,7 +71,10 @@
         line-height: 16px
         text-transform: uppercase
         &::after
-            content: url(../../img/icon-right-arrow-long.svg)
+            content: ''
             width: 24px
             height: 11px
+            background-image: url(../../img/icon-right-arrow-long.svg)
             margin-left: 13px
+            position: absolute
+            margin-top: 2.5px
