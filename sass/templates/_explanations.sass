@@ -1,7 +1,7 @@
 .explanations
     &__container
-        max-width: 1920px
-        padding: 11px 20px 16px 20px
+        max-width: 320px
+        padding: 11px 20px 22px 20px
         margin: auto
     &__title
         color: lighten($black, 6.5%)
@@ -9,8 +9,49 @@
         font-weight: 400
         line-height: 60px
         margin: 0
+        margin-bottom: 30px
     &__items
         padding-left: 0
+        margin: 0
     &__item
+        display: flex
+        justify-content: flex-start
+        align-items: center
         list-style-type: none
-        
+        margin-bottom: 20px
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 60px
+        min-height: 60px
+        background-color: $green
+        &--healthy
+            &::before
+                background-image: url(../../img/advantage-leaf@1x.png)
+                width: 26px
+                height: 29px
+        &--ready
+            &::before
+                background-image: url(../../img/advantage-powder@1x.png)
+                width: 29px
+                height: 31px
+        &--functional
+            &::before
+                background-image: url(../../img/advantage-dining@1x.png)
+                width: 23px
+                height: 30px
+        &--mutable
+            &::before
+                background-image: url(../../img/advantage-clock@1x.png)
+                width: 26px
+                height: 31px
+        &::before
+            content: ''
+            background-repeat: no-repeat
+            background-position: center
+    &__description
+        color: lighten($black, 26.5%)
+        font-family: "Arial MT"
+        font-size: 14px
+        margin: 0 20px
