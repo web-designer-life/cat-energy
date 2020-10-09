@@ -1,0 +1,99 @@
+.example
+    background-color: darken($white, 5%)
+    &__story
+        max-width: 320px
+        padding: 11px 20px 44px 20px
+        margin: auto
+    &__title
+        color: lighten($black, 6.5%)
+        font-size: 36px
+        font-weight: 400
+        line-height: 60px
+        margin: 0
+        margin-bottom: 28px
+    &__description
+        color: lighten($black, 26.5%)
+        font-family: "Arial MT"
+        font-size: 14px
+        max-width: 253px
+        margin: 0
+    &__items
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-left: 0
+        max-width: 280px
+    &__item
+        list-style-type: none
+    &__effect
+        color: lighten($black, 6.5%)
+        font-family: "Oswald Regular"
+        font-size: 24px
+        font-weight: 400
+        line-height: 37px
+        margin: 0
+        padding: 8px 0 10px 0
+        width: 125px
+        border: lighten($black, 26.5%) solid 1px
+        border-radius: 5px
+        text-align: center
+        text-transform: uppercase
+    &__effect-description
+        position: relative
+        color: lighten($black, 26.5%)
+        background-color: darken($white, 5%)
+        font-family: "Arial MT"
+        font-size: 13px
+        line-height: 12px
+        max-width: 87px
+        padding: 0 15px 
+        margin: auto
+        text-align: center
+        margin-top: -11px
+    &__resume
+        color: lighten($black, 6.5%)
+        font-family: "Oswald Regular"
+        font-size: 14px
+        font-weight: 400
+        line-height: 19px
+        margin: 0
+        text-align: center
+        text-transform: uppercase
+    &__slider
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 38px
+    &__image-box
+        margin-bottom: 34px
+    &__image
+        display: none
+        &--active
+            display: block
+    &__choice-box
+        display: flex
+        align-items: center
+        justify-content: center
+    &__choice
+        color: lighten($black, 6.5%)
+        font-family: "Oswald Regular"
+        font-size: 16px
+        text-transform: uppercase
+        border: none
+        background-color: transparent
+    &__indicator
+        position: relative
+        background-color: $white
+        width: 85px
+        height: 15px
+        border: lighten($black, 26.5%) solid 1px
+        border-radius: 10px
+        &::before
+            content: ''
+            position: absolute
+            width: 37px
+            height: 7px
+            margin-top: 3px
+            margin-left: 5px
+            border-radius: 10px
+            background-color: $green
